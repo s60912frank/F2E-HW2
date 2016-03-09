@@ -1,0 +1,298 @@
+* {
+  font-family: Arial; /*全部的字體都是Arial*/
+}
+
+img {
+  border-radius: 3px; /*全部圖片都有3px的圓弧*/
+}
+
+body {
+  background-color: #fe7701;
+}
+
+.box{ /*圖片上所以有的BOX元素style*/
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: -5px 5px rgba(165, 77, 5, 0.5);
+}
+
+.navbarOption { /*導航欄上的字的造型*/
+  font-size: 14px;
+  color: #fe7701;
+  margin: 16px 0px 0px 30px;
+  font-weight: bold;
+}
+
+.subtitle { /*副標題們的造型*/
+  font-size: 14px;
+  color: #fe7701;
+  margin: 16px 0px 0px 30px;
+  position: absolute;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+#logo {
+  margin: 30px 0px 18px 175px;
+  float:left;
+}
+
+#btnContainer { /*按鈕們用div裝起來*/
+  display: inline-block;
+  /*position: absolute;*/
+  float: left;
+  margin: 30px 0px 25px 491px;
+  width: 180px;
+  height: 50px;
+}
+
+#btnContainer img { /*按鈕圖片們*/
+  float: left;
+  margin: 0px 10px 0px 0px;
+}
+
+#navbar { /*導航爛BOX*/
+  clear: both;
+  width: 960px;
+  height: 50px;
+  margin: 0px 150px 19px 150px;
+}
+
+#navbar ul { /*導航欄list*/
+  margin: 0px;
+  padding-left: 0px;
+}
+
+#navbar ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+#sliderBg { /*中央大圖*/
+  margin: 0px 150px 20px 150px;
+  display: block;
+}
+
+/*---------------Services---------------*/
+#servicesContainer { /*包住*/
+  margin: 0px 30px 66px 150px;
+  height: 185px;
+  width: 300px;
+  /*position: absolute;*/
+  float: left;
+}
+
+#servicesContainer div:first-child { /*標題*/
+  width: 300px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+#servicesContainer div img{ /*左三小圖*/
+  margin: 0px 10px 0px 46px;
+  display: inline-block;
+}
+
+#servicesContainer div div{ /*右三塊BOX*/
+  height: 30px;
+  width: 199px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+#servicesContainer div div p { /*BOX中的字*/
+  font-size: 12px;
+  color: #404040;
+  position: absolute;
+  margin: 8px 0px 8px 15px;
+}
+
+/*---------------Portfolio---------------*/
+#portfolioContainer { /*包住*/
+  margin: 0px 30px 66px 0px;
+  height: 185px;
+  width: 300px;
+  /*position: absolute;*/
+  float:left;
+}
+
+#portfolioContainer div { /*標題*/
+  width: 300px;
+  height: 50px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+#portfolioContainer img { /*圖片*/
+  position: absolute;
+  z-index: -1; /*這樣才可以被table蓋住*/
+}
+
+#portfolioContainer table { /*拿來蓋住圖片的表格*/
+  border-collapse: collapse;
+}
+
+#portfolioContainer table tr td {
+  width: 90px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0); /*透明背景*/
+  border-right: 15px solid #fe7701;
+  border-bottom: 10px solid #fe7701;
+  border-radius: -3px;
+}
+
+#portfolioContainer table tr td:nth-child(3) { /*特別照顧右兩格表格元素 因為他們不需要右border*/
+  border-right: 0px;
+}
+
+/*---------------Testimonials---------------*/
+#testimonialsContainer { /*包住*/
+  width: 300px;
+  height: 211px;
+  /*position: absolute;*/
+  float:left;
+  margin: 0px 0px 40px 0px;
+}
+
+#testimonialsContainer div:first-child { /*標題*/
+  width: 300px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+#testimonialsContainer div:nth-child(2) { /*內容*/
+  width: 300px;
+  height: 136px;
+  padding-top: 13px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+#testimonialsContainer div:nth-child(2) p { /*內容文字*/
+  font-size: 12px;
+  color: #404040;
+  margin: 0px;
+  line-height: 1.5em;
+}
+
+/*---------------Our Blog---------------*/
+#ourBlogContainer { /*包住*/
+  margin: 0px 30px 20px 150px;
+  width: 630px;
+  height: 330px;
+  float: left;
+  /*position: absolute;*/
+}
+
+#ourBlogBox { /*標題*/
+  width: 630px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+#ourBlogContainer div div { /*下三BOX*/
+  width: 630px;
+  height: 80px;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#ourBlogContainer div div img { /*BOX中的圖片*/
+  margin-right: 10px;
+}
+
+#ourBlogContainer div div h3 { /*BOX中的標題*/
+  display: inline-block;
+  position: absolute;
+  margin: 4px 0px 8px 0px;
+  font-size: 16px;
+  color: #404040;
+  font-weight: normal;
+}
+
+#ourBlogContainer div div p { /*BOX中的小字*/
+  display: inline-block;
+  position: absolute;
+  margin-top: 38px;
+  font-size: 10px;
+  color: #a54e03;
+}
+
+/*---------------Tweets---------------*/
+#tweetContainer { /*包住*/
+  width: 300px;
+  height: 330px;
+  margin: 0px 0px 20px 0px;
+  /*position: absolute;*/
+  float: left;
+}
+
+#tweetsTitle { /*標題*/
+  width:300px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+#tweetsContant { /*內容*/
+  width:300px;
+  height: 260px;
+  margin-bottom: 20px;
+  padding: 14px 0px 0px 15px;
+  box-sizing: border-box;
+}
+
+#tweetsContant div { /*分隔線*/
+  width: 270px;
+  height: 1px;
+  background-color:  #a54e03;
+  margin: 14px 0px 14px 0px;
+}
+
+#url { /*內容中的連結部分*/
+  font-size: 11px;
+  font-style: italic;
+  margin-top: 11px;
+  color: #a54e03;
+}
+
+#content { /*內容中的其他部分*/
+  margin: 0px 0px 0px 0px;
+  color: #404040;
+  font-size: 14px;
+}
+
+#tweetsContant p span { /*內容中@其他人的部分*/
+  color: #a54e03;
+  font-size: 14px;
+  font-style: normal;
+}
+
+footer { /*底bar*/
+  /*position: absolute;*/
+  height: 50px;
+  width: 1260px;
+  /*width: 100%;*/
+  background-color: #404040;
+  /*margin-top: 616px;*/
+  /*margin-left: -10px;*/
+  float: left;
+  clear: both;
+}
+
+#copyright {
+  margin: 16px 0px 16px 180px;
+  font-size: 14px;
+  color: #fe7701;
+  display: inline-block;
+}
+
+#desinger {
+  margin: 16px 295px 16px 0px;
+  font-size: 14px;
+  color: #fe7701;
+  display: inline-block;
+  float: right;
+}
