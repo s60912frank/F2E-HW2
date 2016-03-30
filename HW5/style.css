@@ -1,13 +1,20 @@
 body {
+  background-color: #A1887F;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*設定網頁主體大小*/
+#innerBody {
   width: 1280px;
-  height: 1635px;
+  height: 1435px;
   margin-left:auto;
   margin-right:auto;
   margin-top: 0px;
-  background-color: #A1887F;
   float: none;
 }
 
+/*設定整個網頁用的字型*/
 * {
   font-family: 'Open Sans', sans-serif;
 }
@@ -16,24 +23,37 @@ img {
   display: inline-block;
 }
 
+/*主導覽列*/
 header {
   width: 100%;
-  height: 133px;
+  height: 100px;
   background-color: #795548;
+  text-align: center; /*置中對齊*/
 }
 
-#iconContainer {
-  display: inline-block;
-  float: right;
-  margin-right: 144px;
-  margin-top: 37px;
-}
-
-header img {
-  width: 129px;
+/*用div包起來這樣<1280px時才不會飄下去*/
+header > div {
+  display: inline-block;;
+  width: 1280px;
   height: 100%;
 }
 
+/*放icon用div*/
+#iconContainer {
+  display: inline-block;
+  float: right;
+  margin-top: 18px;
+  margin-left: -36px;/*抵銷最右icon margin*/
+}
+
+#logo {
+  display: inline-block;
+  width: 120px;
+  height: 100%;
+  float: left;
+}
+
+/*icons*/
 #iconContainer img {
   width: 65px;
   height: 65px;
@@ -41,6 +61,7 @@ header img {
   float: left;
 }
 
+/*大圖*/
 #sliderbox {
   height: 616px;
   width: 100%;
@@ -48,20 +69,21 @@ header img {
   clear: both;
 }
 
+/*內容部分大小設定*/
 #article {
   width: 1188px;
   height: 802px;
-  /*background-color: #A1887F;*/
-  margin-top: 0px;
-  margin-left: 46px;
-  margin-right: 46px;
+  margin: 0px 46px 0px 46px;
   float: left;
 }
 
+/*標題*/
 #article h1 {
   color: white;
+  margin: 1em 0px 1em 0px;
 }
 
+/*四大區塊的class*/
 .contentContainer {
   display: inline-block;
   float: left;
@@ -69,6 +91,7 @@ header img {
   margin-right: 36px;
 }
 
+/*最後一個不要margin*/
 #article div:last-child {
   margin-right: 0px;
 }
@@ -78,12 +101,14 @@ header img {
   float: left;
 }
 
+/*設定內容圖片*/
 .contentContainer div img {
   height: 212px;
   width: 100%;
   float: left;
 }
 
+/*內容方塊*/
 .content {
   background-color: white;
   height: 315px;
@@ -92,6 +117,7 @@ header img {
   padding: 0px;
 }
 
+/*內容方塊上的三角形*/
 .triangle {
   width: 0px;
   height: 0px;
@@ -103,6 +129,7 @@ header img {
   margin-right: 116px;
 }
 
+/*內容list*/
 .content ul {
   list-style-type: none;
   text-align: center;
@@ -110,6 +137,7 @@ header img {
   margin-top: 16px;
 }
 
+/*每一項中間的橫線*/
 .content  li + li:before {
   content: "";
   display: block;
@@ -124,23 +152,32 @@ header img {
   font-size: 2em;
 }
 
- footer {
+/*頁腳*/
+footer {
    width: 100%;
-   height: 99px;
+   height: 100px;
    background-color: #795548;
    float: left;
    font-size: 1em;
    color: white;
+   text-align: center; /*讓整個頁腳內容置中*/
+ }
+
+/*頁角div*/
+ footer > div {
+   width: 1280px; /*設定頁腳內容寬度*/
+   height: 100%;
+   display: inline-block;
  }
 
  footer h2:first-child {
-   float: left;
-   margin-left: 46px;
    margin-top: 1.5em;
+   display: inline-block;
+   float: left;
  }
 
  footer h2:nth-child(2) {
-   float: right;
-   margin-right: 46px;
    margin-top: 1.5em;
+   display: inline-block;
+   float: right;
  }
