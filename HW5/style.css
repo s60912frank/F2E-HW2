@@ -105,17 +105,29 @@ header > div {
   float: left;
 }
 
-/*設定內容圖片*/
-.contentContainer div img {
+.imageContainer {
   height: 212px;
   width: 100%;
+  position: relative;
+}
+
+/*設定內容圖片*/
+.imageContainer img {
+  height: 100%;
+  width: 100%;
   float: left;
+  position: absolute;
 }
 
 .imageContainer div {
   width: 100%;
   height: 100%;
+  position: absolute;
+  font-size: 2em;
+  color: white;
   display: none;
+  background-color: rgba(78, 52, 46, 0.8);
+  border-radius: 5px;
 }
 
 /*內容方塊*/
