@@ -123,6 +123,9 @@ header > div {
   width: 100%;
   height: 100%;
   position: absolute;
+  text-align: center;
+  padding-top: 96px;
+  box-sizing: border-box;
   font-size: 2em;
   color: white;
   display: none;
@@ -170,8 +173,14 @@ header > div {
   margin-bottom: 16px;
 }
 
-.content ul li {
+.content ul li a {
   font-size: 2em;
+  text-decoration: none;
+  color: #3E2723
+}
+
+.content ul li a:hover {
+  color: blue;
 }
 
 /*頁腳*/
