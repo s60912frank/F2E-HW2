@@ -2,11 +2,19 @@ $(document).ready(
   function(){
     $('.imageContainer').hover(
       function(){
-        $(this).children('div').fadeIn(200);
+        $(this).children('div').fadeIn(100);
       },
-
       function(){
-        $(this).children('div').fadeOut(100);
+        $(this).children('div').fadeOut(50);
+      }
+    );
+
+    $('.smallIconContainer').hover(
+      function(){
+        $(this).children().last().fadeIn(100);
+      },
+      function(){
+        $(this).children().last().fadeOut(50);
       }
     );
   }
