@@ -1,0 +1,223 @@
+body {
+  background-color: #A1887F;
+}
+
+.fill-width{
+  width: 100%;
+}
+
+.test {
+  background-color: black;
+}
+
+/*設定整個網頁用的字型*/
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*主導覽列*/
+header {
+  /*width: 100%;
+  height: 100px;
+  min-width: 1280px;
+  text-align: center; /*置中對齊*/
+  background-color: #795548;
+  height: 100px;
+}
+
+/*放icon用div*/
+#iconContainer {
+  display: inline-block;
+  float: right;
+  margin-top: 18px;
+  margin-left: -36px;/*抵銷最右icon margin*/
+}
+
+#logo {
+  height:100px;
+  float: left;
+}
+
+.fixpxh{
+  height: 100px;
+}
+
+/*icons*/
+.smallIconContainer {
+  width: 65px;
+  height: 65px;
+  margin-top: 17.5px;
+}
+
+.smallIconContainer img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.iconHover {
+  display: none;
+}
+
+#sideBar {
+  position: absolute;
+  background-color: #4E342E;
+  border-radius: 1em;
+  height: 220px;
+  width: 80px;
+  display: none;
+}
+
+#sideBar img {
+  height: 65px;
+  width: 65px;
+  margin-left: 7.5px;
+  margin-top: 6px;
+}
+
+#sideBar div {
+  position: absolute;
+  left: 75px;
+  top: 10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 0 15px 26.0px;
+  border-color: transparent transparent transparent #4E342E;
+}
+
+#menuIcon div {
+  position: relative;
+}
+
+#menuIcon div img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#x {
+  display: none;
+}
+
+/*標題*/
+h1 {
+  color: white;
+  margin: 1em 0px 1em 0px;
+}
+
+/*四大區塊的class*/
+.contentContainer {
+  display: inline-block;
+  float: left;
+  width: 270px;
+  margin-right: 36px;
+}
+
+/*最後一個不要margin*/
+#article div:last-child {
+  margin-right: 0px;
+}
+
+.imageContainer {
+  height: 212px;
+  /*width: 100%;*/
+  position: relative;
+  text-align: center;
+}
+
+/*設定內容圖片*/
+.imageContainer img {
+  height: 100%;
+}
+
+.imageContainer div {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  padding-top: 84px;
+  box-sizing: border-box;
+  font-size: 2em;
+  color: white;
+  display: none;
+  background-color: rgba(78, 52, 46, 0.8);
+  border-radius: 5px;
+}
+
+/*內容方塊*/
+.content {
+  background-color: white;
+  height: 275px;
+  width: 100%;
+  border-radius: 3em;
+  padding: 0px;
+  margin-top: -16px;
+  margin-bottom: 2em;
+}
+
+/*內容方塊上的三角形*/
+.triangle {
+  width: 0px;
+  height: 0px;
+  border-top: 0px solid transparent;
+  border-right: 19px solid transparent;
+  border-bottom: 38px solid white;
+  border-left: 19px solid transparent;
+  margin-left: 45%;
+}
+
+/*內容list*/
+.content ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0px;
+  margin-top: 16px;
+}
+
+/*每一項中間的橫線*/
+.content  li + li:before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 80%;
+  margin: 0px 10% 0px 10%;
+  background: black;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.content ul li a {
+  font-size: 2em;
+  text-decoration: none;
+  color: #3E2723
+}
+
+.content ul li a:hover {
+  color: blue;
+}
+
+/*頁腳*/
+footer {
+   background-color: #795548;
+   font-size: 1em;
+   color: white;
+ }
+
+ footer h2:first-child {
+   margin-top: 0.5em;
+   margin-bottom: 0.5em;
+   display: inline-block;
+   float: left;
+ }
+
+ footer h2:nth-child(2) {
+   margin-top: 0.5em;
+   margin-bottom: 0.5em;
+   display: inline-block;
+   float: right;
+ }
